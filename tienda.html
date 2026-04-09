@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#0b1a2f;color:white}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+padding:15px;
+background:#081322;
+text-align:center;
+}
+
+/* CONTENEDOR */
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:40px;
+gap:20px;
+}
+
+/* CARD PRO */
+.card{
+background:#081322;
+border-radius:15px;
+width:300px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+transition:0.4s;
+transform:translateY(20px);
+animation:fadeIn 1s ease forwards;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.card:hover img{
+transform:scale(1.1);
+}
+
+.card h3{
+color:#d4af37;
+padding:10px;
+}
+
+.card p{
+padding:0 10px;
+font-size:14px;
+opacity:0.9;
+}
+
+.btn{
+display:block;
+margin:15px;
+padding:12px;
+background:#d4af37;
+color:black;
+text-align:center;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Vehículos Disponibles</h2>
+</header>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+<h3>E-Car X3 2025</h3>
+<p>Autonomía: 300km<br>Velocidad: 120km/h<br>Carga: 6h</p>
+<a class="btn" href="https://wa.me/5350896082?text=Hola%20quiero%20información%20del%20E-Car%20X3">Consultar</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583267746897-2cf415887172">
+<h3>Volt Mini EV</h3>
+<p>Autonomía: 200km<br>Velocidad: 100km/h<br>Carga: 5h</p>
+<a class="btn" href="https://wa.me/5350896082?text=Hola%20quiero%20información%20del%20Volt%20Mini">Consultar</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+<h3>Electro SUV Z5</h3>
+<p>Autonomía: 400km<br>Velocidad: 150km/h<br>Carga: 7h</p>
+<a class="btn" href="https://wa.me/5350896082?text=Hola%20quiero%20información%20del%20SUV%20Z5">Consultar</a>
+</div>
+
+</div>
+
+</body>
+  </html>
