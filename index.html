@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoltCar Imports</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#0b1a2f;color:white}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;width:100%;
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;
+background:rgba(8,19,34,0.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+nav a{
+color:#d4af37;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+nav a:hover{color:white}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1619767886558-efdc259cde1a') center/cover;
+animation:fadeIn 2s ease;
+}
+
+.hero h1{
+font-size:50px;
+color:#d4af37;
+animation:slideUp 1.5s ease;
+}
+
+.hero p{
+margin:15px 0;
+font-size:20px;
+opacity:0.8;
+animation:fadeIn 2s ease;
+}
+
+.btn{
+padding:14px 30px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+.btn:hover{
+transform:scale(1.1);
+background:white;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn{
+from{opacity:0} to{opacity:1}
+}
+
+@keyframes slideUp{
+from{transform:translateY(50px);opacity:0}
+to{transform:translateY(0);opacity:1}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>VoltCar Imports</h2>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="tienda.html">Vehículos</a>
+<a href="ofertas.html">Ofertas</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="privacidad.html">Privacidad</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>El futuro es eléctrico</h1>
+<p>Potencia. Elegancia. Innovación.</p>
+<a href="tienda.html" class="btn">Explorar Vehículos</a>
+</section>
+
+</body>
+</html>
